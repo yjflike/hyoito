@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="UserInfoModule">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/angular.js/1.2.16/angular.min.js"></script>
+		<script src="Form.js"></script>
+	</head>
+	<body>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">双向数据绑定</div>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-12">
+						<form class="form-horizontal" role="form" ng-controller="UserInfoCtrl">
+							<div class="form-group">
+								<label class="col-md-2 control-label">
+									Email:
+								</label>
+								<div class="col-md-10">
+									<input type="email" class="form-control" placeholder="input your email address" ng-model="userInfo.email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">
+									Password:
+								</label>
+								<div class="col-md-10">
+									<input type="password" class="form-control"placeholder="number,_,only" ng-model="userInfo.password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" placeholder="check" ng-model="userInfo.autoLogin">Auto login
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10">
+									<button class="btn btn-default col-md-1" ng-click="getFormData()">
+									get userInfo
+									</button>
+									<button class="btn btn-default col-md-offset-1 col-md-1" ng-click="setFormData()">
+									set userInfo
+									</button>
+									<button class="btn btn-default col-md-offset-1 col-md-1" ng-click="resetFormData()">
+									reset
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

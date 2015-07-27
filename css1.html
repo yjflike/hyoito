@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="MyCSSModule">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/angular/angular.min.js"></script>
+		<!--<script src="http://apps.bdimg.com/libs/angular.js/1.2.16/angular.min.js"></script>-->
+		<script src="NgShow.js"></script>
+	</head>
+	<body>
+		<div ng-controller="DeathrayMenuController">
+			<button ng-click="toggleMenu()"> Toggle Menu</button>
+			<ul ng-show="menuState.show">
+				<li ng-click="stun()">Stun</li>
+				<li ng-click="disintegrate()">Disintegrate</li>
+				<li ng-click="erase()">Erase from history</li>
+			</ul>
+		</div>
+	</body>
+</html>

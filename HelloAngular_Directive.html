@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="MyModule">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/HelloAngular_Directive.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<!--A:属性模式(默认模式)-->
+		<hello>A:属性模式</hello>
+		<!--E:元素模式-->
+		<div hello>E:元素模式</div>
+		<!--C:class 样式模式-->
+		<div class="hello">C:class 样式模式</div>
+		<!--M:注释模式-->
+		<!-- directive:hello -->
+		<div>M:注释模式</div>
+
+		<hello>
+			<div>
+				transclude,所以指令被嵌套(指令嵌套)
+			</div>
+		</hello>
+
+	</body>
+</html>

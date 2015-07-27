@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="MyModule">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/Directive&Controller.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<div ng-controller="MyCtrl">
+			<loader howToLoad="loadData()">滑动加载</loader>
+		</div>
+		
+		<div ng-controller="MyCtrl2">
+			<loader howToLoad="loadData2()">滑动加载2</loader>
+		</div>
+	</body>
+</html>
